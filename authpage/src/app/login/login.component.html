@@ -1,0 +1,13 @@
+<div class = "authForm">
+    <form [formGroup]="loginForm" (ngSubmit)="OnSubmit()">
+        <h1>Логин</h1>
+        <input type = "text" name = "login" placeholder="Логин" formControlName = "login">
+        <div class = "errorBox" *ngIf = "this.status == 0">Логин не существует</div>
+
+        <input type = "text" name = "password" placeholder="Пароль" formControlName = "password">
+        <div class = "errorBox" *ngIf = "this.status == 1">Неверный пароль</div>
+        <button class = "submitButton" type = "submit">Вход</button>
+        
+        <div class = "successBox" *ngIf = "this.status == 2">Успешный вход</div>
+    </form>
+</div>

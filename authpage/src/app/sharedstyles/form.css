@@ -1,0 +1,71 @@
+.authForm {
+  max-width: 400px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.authForm h1 {
+  font-family:sans-serif;
+}
+
+.authForm input {
+  display: block;
+  width: 95%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.submitButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.submitButton:hover {
+  background-color: #666;
+}
+
+.submitButton:active {
+  background-color: #111;
+}
+
+.errorBox {
+  display: block;
+  background-color: red;
+  width: 95%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  align-self: center;
+}
+
+.successBox {
+  display: block;
+  background-color: rgb(95, 255, 95);
+  width: 95%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+}

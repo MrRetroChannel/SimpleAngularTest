@@ -1,0 +1,13 @@
+<form class = "authForm" [formGroup]="registerForm" (ngSubmit)="OnSubmit()">
+    <h1>Регистрация</h1>
+    <input type = "text" name = "email" placeholder="Email" formControlName = "email">
+    <div class = "errorBox" *ngIf="this.submitStatus.includes(1)">Почта занята</div>
+
+    <input type = "text" name = "username" placeholder="Логин" formControlName = "username">
+    <div class = "errorBox" *ngIf="this.submitStatus.includes(0)">Логин занят</div>
+
+    <input type = "text" name = "password" placeholder="Пароль" formControlName = "password">
+    <button class = "submitButton" type = "submit">Зарегистрироваться</button>
+
+    <div class = "successBox" *ngIf="this.submitStatus.includes(2)">Успешная регистрация</div>
+</form>
